@@ -1,1 +1,8 @@
 <div id="root"></div>
+<script>
+    window.addEventListener('load',(event) => {
+        let timing = performance.getEntriesByType('navigation')[0];
+        let tti = timing.domInteractive - timing.fetchStart;
+        console.log('tti' + tti);
+    })
+</script>
