@@ -1,3 +1,4 @@
+import {createStore} from 'redux';
 export function counter(state = 0, action) {
     switch (action.type) {
     case 'INCREMENT':
@@ -8,3 +9,7 @@ export function counter(state = 0, action) {
       return state;
     }
 }
+
+const store = createStore(counter);
+
+export default store;
