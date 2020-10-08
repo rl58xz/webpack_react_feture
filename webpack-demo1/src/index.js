@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import App from './Redux/Counters/index';
+import App from './Hooks/useState/LikeButton';
 import counter from './Redux/Counters/reducers';
 import store from './Redux/Counters/reducers';
 import {Provider} from 'react-redux'
